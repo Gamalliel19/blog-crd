@@ -1,4 +1,4 @@
-const BlogList = ({blogs, title, handleDelete}) => {
+const BlogList = ({blogs, title}) => {
     // OPSI PERTAMA CUKUP MASUKKAN SEBAGAI PARAMETER DENGAN KURUNG KURAWAL YANG DIBUTUHKAN
     // OPSI KEDUA ADALAH DEKLARASIKAN SATU SATU SEPERTI DIBAWAH
     // const blogs = props.blogs
@@ -11,7 +11,6 @@ const BlogList = ({blogs, title, handleDelete}) => {
                 <div className="blog-preview" key={blog.id}>
                     <h2>{blog.title}</h2>
                     <p>Written by {blog.author}</p>
-                    <button onClick={() => handleDelete(blog.id)} >delete blog</button>
                 </div>
             ))}
         </div>
